@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body
+        {
+            background:url(../IMG/portada.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table{
+            width: 45%;
+            border: 2px solid #000000;
+            background-color: #000000;
+        }
+        input[type=text], input[type=password]{
+            width: 100%;
+            padding: 8px 30px;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        label{
+            font-size: 14px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFFFFF;
+        }
+        input[type=submit]{
+            background-color:#000000 ;
+            color: #FFFFFF;
+            padding: 8px 10px;
+            margin: 8px 0px;
+            border: solid;
+            cursor: pointer;
+            width: 35%;
+        }
+        label[type=titulo]{
+            color: #000;
+        }
+        button{
+            background-color:#000000 ;
+            color: #FFFFFF;
+            padding: 8px 10px;
+            margin: 8px 0px;
+            border: solid;
+            cursor: pointer;
+            width: 35%; 
+        }
+        p{
+            font-size: 14px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table>
+            <form action="../PHP/registrar.php" name="form" method="post">
+                <tr>
+                    <td colspan="3"  style="background-color: #A4A4A4; padding-bottom: 5px; padding-top: 5px;" ><label type="titulo">registrate</label></td>
+                </tr>
+                <tr>
+                    <td><p>Nombre:</p><input type="text" name="nombre" required></td>
+                </tr>
+                <tr>
+                    <td><p>Apellido:</p><input type="text" name="apellido" required></td>
+                </tr>
+                <tr>
+                    <td><p>Correo:</p><input type="text" name="correo" required></td>
+                </tr>
+                <tr>
+                    <td><p>Dirrecion:</p><input type="text" name="dirrecion" required></td>
+                </tr>
+                <tr>
+                    <td><p>Nombre de usuario:</p><input type="text" name="N_usuario" required></td>
+                </tr>
+                <tr>
+                    <td><p>clave:</p><input type="password" name="clave" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="registrar"></td>
+                </tr>
+            </form>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <center><td><a href="../HTML/login.html"><button>iniciar secicion</button></a></td></center>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
